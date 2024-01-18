@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    password: 12345
+    url: jdbc:mysql://localhost:3306/kailash
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+planapp:   
+  messages:
+    plansucc: plan saved successfully 
+    planfail: plan is not saved
+    planupdatesucc: plan updated successfully
+    planupdatefail: plan is not updated
+    plandelsucc: plan deleted successfully
+    plandelfail: plan is not deleted
+    planstatussucc: plan status changed successfully
+    planstatusfail: plan status has not change
